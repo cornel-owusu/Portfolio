@@ -1913,3 +1913,173 @@ footer {
     padding-left: 1rem;
   }
 }
+/* ═══════════════════════════════════════════
+   PREMIUM ICON SYSTEM
+═══════════════════════════════════════════ */
+
+.svc-icon,
+.skill-ico,
+.blog-thumb-icon,
+.social-ico,
+.ci-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* SERVICES ICONS */
+
+.svc-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  margin-bottom: 1.4rem;
+  backdrop-filter: blur(10px);
+}
+
+.svc-icon i {
+  font-size: 1.4rem;
+  color: #D4AF37;
+}
+
+.svc:hover .svc-icon {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 30px rgba(212, 175, 55, 0.15);
+}
+
+/* SKILL ICONS */
+
+.skill-ico {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+  flex-shrink: 0;
+  backdrop-filter: blur(12px);
+}
+
+.skill-ico img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.skill-card:hover .skill-ico {
+  border-color: rgba(212,175,55,0.35);
+  box-shadow:
+    0 0 25px rgba(212,175,55,0.12);
+}
+
+.skill-card:hover .skill-ico img {
+  transform: scale(1.08);
+}
+
+/* BLOG ICONS */
+
+.blog-thumb-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: rgba(212,175,55,0.10);
+  border: 1px solid rgba(212,175,55,0.15);
+  backdrop-filter: blur(10px);
+}
+
+.blog-thumb-icon i {
+  font-size: 1.8rem;
+  color: #D4AF37;
+}
+
+/* SOCIAL ICONS */
+
+.social-ico {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.social-ico i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.social-card:hover .social-ico {
+  transform: translateY(-5px);
+  border-color: rgba(212,175,55,0.35);
+  box-shadow:
+    0 0 30px rgba(212,175,55,0.18);
+}
+
+.social-card:hover .social-ico i {
+  color: #D4AF37;
+}
+
+/* CONTACT ICONS */
+
+.ci-ico {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(212,175,55,0.08);
+  border: 1px solid rgba(212,175,55,0.16);
+  backdrop-filter: blur(10px);
+}
+
+.ci-ico i {
+  color: #D4AF37;
+  font-size: 1.1rem;
+}
+
+/* GLOBAL HOVER EFFECT */
+
+.svc-icon:hover,
+.skill-ico:hover,
+.blog-thumb-icon:hover,
+.social-ico:hover,
+.ci-ico:hover {
+  transform: translateY(-4px);
+}
+
+/* RETINA SHARPNESS */
+
+.skill-ico img,
+.social-ico i,
+.svc-icon i,
+.blog-thumb-icon i,
+.ci-ico i {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .svc-icon,
+  .social-ico {
+    width: 56px;
+    height: 56px;
+  }
+
+  .blog-thumb-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .skill-ico {
+    width: 52px;
+    height: 52px;
+  }
+}
